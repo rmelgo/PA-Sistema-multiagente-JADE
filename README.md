@@ -4,17 +4,17 @@
 
 # - Introducción
 
-Proyecto realizado en la asignatura de Programación Avanzada del grado de Ingenieria Informática de la Universidad de Salamanca. El enunciado del proyecto se encuentra subido en el repositorio en un archivo PDF llamado *enunciadoPrácticaAgentesPA2021-2022.pdf*.
+Proyecto realizado en la asignatura de ***Programación Avanzada*** del grado de Ingenieria Informática de la Universidad de Salamanca. El enunciado del proyecto se encuentra subido en el repositorio en un archivo PDF llamado <a href="https://github.com/rmelgo/PA-Sistema-multiagente-JADE/blob/main/enunciadoPr%C3%A1cticaAgentesPA2021-2022.pdf" target="_blank">*enunciadoPrácticaAgentesPA2021-2022.pdf*</a>.
   
 El principal objetivo de este proyecto es la realización de un sistema multiagente donde los distintos agentes colaboren entre sí para proporcionar un servicio.
-En este caso, el servicio que se va a proporcionar es un pequeño servicio de consulta de hospital, en el que los usuarios pueden concetar citas con un médico especialista de un determinado área.
-Dentro del proyecto, tambien se realizará un pequeño articulo científico donde se explica con mayor detalle el proyecto realizado.
+En este caso, el servicio que se va a proporcionar es un pequeño servicio de consulta de hospital, en el que los usuarios pueden concertar citas con un médico especialista de un determinado área.
+Dentro del proyecto, tambien se realizará un pequeño artículo científico donde se explica con mayor detalle el proyecto realizado.
 
 # - Comentarios sobre el entorno de ejecución
 
 Para ejecutar este programa, se requerirá de la herramienta de desarrollo **Eclipse** y una versión de **Java 1.7** o superior.  
 
-También se requerirán un par de librerias que implementas las funcionalidades de ***JADE*** y la creación y comunicación entre agentes.
+También se requerirán un par de librerías que implementas las funcionalidades de ***JADE*** y la creación y comunicación entre agentes.
 
 # Comentarios sobre el material adjuntado
 
@@ -24,18 +24,18 @@ El proyecto cuenta con los siguientes ficheros:
 
   - La clase **AgenteConsulta.java** implementa un *Agente Consulta* que solicitará al usuario el tipo de médico requerido y enviará la información al *Agente Buscador*. El *Agente Buscador* le devolverá un médico experto adecuado al usuario. 
   - La clase **AgenteBuscador.java** implementa un *Agente Buscador* que se comunicará con el *Agente Doctor*, y su propósito es encontrar un médico conveniente dada la información enviada por *Agente Consulta*. Una vez que lo tenga, lo devolverá a *Agente Consulta*.
-  - La clase **AgenteDoctor.java** implementa un *Agente Doctor* que obtendrá una cita cque coincida con la información enviada por *Agente Buscador* y devolverá los datos al *Agente Buscador*.
+  - La clase **AgenteDoctor.java** implementa un *Agente Doctor* que obtendrá una cita que coincida con la información enviada por *Agente Buscador* y devolverá los datos al *Agente Buscador*.
   - La clase **Doctor.java** que actuará como base de datos ya que almacena información de los distintos médicos que trabajan en el hospital (nombre, apellidos, especialidad, fechas y consultas disponibles).
-  - La clase **Utils.java** que contiene una serie de funciones auxiliares que permiten el intercambio de mensajes entre lo agentes asi como el registro de los servicios.
+  - La clase **Utils.java** que contiene una serie de funciones auxiliares que permiten el intercambio de mensajes entre los agentes así como el registro de los servicios.
  
-- Un documento llamado ***A_Multi_Agent_System_for_Hospital_Organization.pdf*** que contiene un artículo basado en un sistema multiagente destinado a una organización hospitalaria. Este articulo ha sido la base a partir de la cual se ha elaborado el diseño del sistema multiagente.
+- Un documento llamado ***A_Multi_Agent_System_for_Hospital_Organization.pdf*** que contiene un artículo basado en un sistema multiagente destinado a una organización hospitalaria. Este artículo ha sido la base a partir de la cual se ha elaborado el diseño del sistema multiagente.
 - Un documento llamado ***A Multi-Agent System For Arranging Doctor Appointments.pdf*** que contiene un artículo donde se explicada de manera detallada la estructura y el funcionamiento del sistema multiagente desarrollado.
     
 # - Parámetros de ejecución
 
 Para poder poner en marcha el sistema multiagente en el entorno de ***Eclipse***, es necesario establecer las configuraciones de ejecución necesarias para lanzar cada uno de los 3 agentes que forman el sistema multiagente.  
 
-Para crear una nueva configuración en Eclipse, se debe acceder a *Run -> Run Configurations*. Se desplegará una nueva ventana donde se podran crear distintas configuraciones.
+Para crear una nueva configuración en Eclipse, se debe acceder a *Run -> Run Configurations*. Se desplegará una nueva ventana donde se podrán crear distintas configuraciones.
 
 ## Configuración del Agente Consulta
 
@@ -117,7 +117,7 @@ Una vez el usuario introduce uno de los servicios disponibles, el sistema multia
 
 ![Ejemplo ejecucion 3 con borde](https://github.com/rmelgo/PA-Sistema-multiagente-JADE/assets/145989723/3df1672b-646f-4860-b0d7-75ace11c2318)
 
-Con la interfaz despleguada al lanzar el *Agente Buscador*, se puede capturar el intercambio de mensajes realziado entre los agentes. En este ejemplo, el intercambio de mensajes realizado por los agentes es el siguiente:
+Con la interfaz despleguada al lanzar el *Agente Buscador*, se puede capturar el intercambio de mensajes realizado entre los agentes. En este ejemplo, el intercambio de mensajes realizado por los agentes es el siguiente:
 
 <p align="center">
   <img src="https://github.com/rmelgo/PA-Sistema-multiagente-JADE/assets/145989723/c7fc873d-8ca7-4f39-9d0a-adacba87ae0b">
@@ -127,4 +127,10 @@ Si el usuario solicita un servicio o especialidad que no está disponible, el si
 
 ![Ejemplo ejecucion 5 con borde](https://github.com/rmelgo/PA-Sistema-multiagente-JADE/assets/145989723/b14d64ba-0589-4c6e-9470-79f48fdf8ad3)
 
+# - Participantes
 
+<table>
+  <td align="center"><a href="https://github.com/rmelgo"><img src="https://avatars.githubusercontent.com/u/145989723?s=400&u=e5c06adba3f3c418207178abc845d398b3d5f77f&v=4" width="100px;" alt=""/><br /><sub><b>Raúl Melgosa</b></sub></a><br/> 
+  <td align="center"><img src="https://avatars.githubusercontent.com/u/84237179?v=4" width="100px;" alt=""/><br /><sub><b>Juan Carlos Velasco</b></sub></a><br/> 
+  <td align="center"><img src="https://avatars.githubusercontent.com/u/84237179?v=4" width="100px;" alt=""/><br /><sub><b>Alberto Lorenzo</b></sub></a><br/> 
+</table>
